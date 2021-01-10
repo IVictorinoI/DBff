@@ -38,7 +38,7 @@
         ],
         "get": {
           "tags": [
-            "CPF Check Request"
+            "Customer Request"
           ],
           "summary": "Get customer request with given ID",
           "parameters": [
@@ -46,7 +46,7 @@
               "in": "path",
               "name": "cpf",
               "required": true,
-              "description": "CPF Check Request id",
+              "description": "Customer Request id",
               "schema": {
                 "$ref": "#/components/schemas/id"
               }
@@ -80,7 +80,7 @@
         ],
         "get": {
           "tags": [
-            "CPF Check Request"
+            "Customer Request"
           ],
           "summary": "Get customer request with given ID",
           "parameters": [

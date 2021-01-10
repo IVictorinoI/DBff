@@ -1,24 +1,3 @@
-# Sistema integrador - DBff 
-Backend for frontend - bff
-**Node**
-
-## Resumo
-- Este sistema não possui nenhuma integração com banco de dados
-- O Objetivo dele é atender 'Clients' que podem ser front ends ou mobiles.
-- Faz as requests e aplica tratamentos, transformando dados brutos em informações relevantes.
-- Faz requests para os sistemas ( [Sistema A](https://github.com/IVictorinoI/AGestorPessoa/), [Sistema B](https://github.com/IVictorinoI/BGestorRendaBem/) e [Sistema C](https://github.com/IVictorinoI/CExtrato/)) mostrando uma visão consolidada das informações. 
-- A API possui swagger.
-
-
-## Customer
-Request para retorno das informações do cliente
-![Customer](https://github.com/IVictorinoI/DBff/blob/main/Imagens/Customer.PNG)
-
-### Customer/{cpf}
-Retorna uma visão consolidada com todas as informações dos sistemas [Sistema A](https://github.com/IVictorinoI/AGestorPessoa/), [Sistema B](https://github.com/IVictorinoI/BGestorRendaBem/) e [Sistema C](https://github.com/IVictorinoI/CExtrato/)
-
-Exemplo de retorno:
-```javascript
 {
   "name": "Victor Matheus Mendes",
   "cpf": "08021566906",
@@ -219,38 +198,3 @@ Exemplo de retorno:
     }
   ]
 }
-```
-
-
-### Customer/health/{cpf}
-Retorna uma visão mais estratégica da saúda do cliente, esta visão seria um pequeno exemplo do poder que esta API tem de agrupar dados e transformá-los em informações relevantes
-
-Exemplo de retorno:
-```javascript
-{
-  "identify": {
-    "name": "Victor Matheus Mendes",
-    "birthDate": "1992-06-23T00:00:00",
-    "age": 29
-  },
-  "good": {
-    "salary": 1800,
-    "totalIncome": 950,
-    "totalAsset": 820
-  },
-  "bad": {
-    "totalCpfCheck": 13,
-    "totalCpfCheckInLastYear": 13,
-    "totalPaidLate": 1300
-  },
-  "financeInfo": {
-    "totalDebs": 1300,
-    "totalPendingDebs": 150,
-    "totalMovtoCartao": 150,
-    "totalMovtoFinanc": 300
-  },
-  "score": {
-    "value": 75
-  }
-}
-```

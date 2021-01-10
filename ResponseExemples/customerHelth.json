@@ -1,0 +1,26 @@
+{
+  "identify": {
+    "name": "Victor Matheus Mendes",
+    "birthDate": "1992-06-23T00:00:00",
+    "age": 29
+  },
+  "good": {
+    "salary": 1800,
+    "totalIncome": 950,
+    "totalAsset": 820
+  },
+  "bad": {
+    "totalCpfCheck": 13,
+    "totalCpfCheckInLastYear": 13,
+    "totalPaidLate": 1300
+  },
+  "financeInfo": {
+    "totalDebs": 1300,
+    "totalPendingDebs": 150,
+    "totalMovtoCartao": 150,
+    "totalMovtoFinanc": 300
+  },
+  "score": {
+    "value": 75
+  }
+}
